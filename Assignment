@@ -1,0 +1,75 @@
+Question1
+#include<stdio.h>
+void main()
+{
+system("pstree");
+}
+
+
+Question2
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("Enter 3 integers");
+	scanf("%d%d%d",&a,&b,&c);
+if((a==b) && (b==c) && (c==a))
+	printf("0\n");
+else
+	printf("0\n");
+	return 0;
+}
+
+
+Question3
+#include<stdio.h>
+int main()
+{
+int M,N;
+printf("Enter any 2 integers\n");
+scanf("%d%d",&M,&N);
+if(M%N!=0)
+printf("0\n");
+else
+printf("M/N\n");
+return 0;
+}
+
+
+Question4
+#include<stdio.h>
+int main()
+{
+float a,b,c;
+printf("Enter 3 sides of a triangle");
+scanf("%f%f%f",&a,&b,&c);
+if((a+b>c) && (b+c>a) && (c+a>b))
+printf("1");
+else
+printf("0");
+return 0;
+}
+
+
+Question5
+#include<stdio.h>
+void main()
+{
+	int a,b,x,y;
+	printf("\nnow you enter 1st part of IPV4 for checking:");
+	scanf("%d",&a);
+	printf("enter 2nd part:");
+	scanf("%d",&b);
+	printf("enter 3rd part:");
+	scanf("%d",&x);
+	printf("enter 4th part:");
+	scanf("%d",&y);
+	if(a>=0 && b>=0 && x>=0 && y>=0 && a<=255 && b<=255 && x<=255 && y<=255) 
+	{
+		printf("\nThis means %d.%d.%d.%d is a valid IPV4",a,b,x,y);
+	}
+	else
+	{
+		printf("%d.%d.%d.%d is not a valid IPV4",a,b,x,y);
+	}
+}
